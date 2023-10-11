@@ -19,16 +19,16 @@ function Aurthors() {
 
   return (
     <div>Aurthors
-
-    {aurthors.map((items, index)=> (
+      {
+     !seePost ? aurthors.map((items, index)=> (
         <div>
             
          <p>{items.aurthor}</p>
-        <button onclick= {()=> setSeePosts(true)}>View aurthor's posts</button>
+        <button onClick= {()=> setSeePosts(val => !val)}>View aurthor's posts</button>
         </div>
-
-    ))}
-
+    
+    )) : ""
+     }
 
     </div>
   )

@@ -31,7 +31,8 @@ function Aurthors() {
     )) : ""
      }
 
-     <Link></Link>
+<Link to="/posts">See New Posts</Link>
+
 
     </div>
   )

@@ -1,6 +1,7 @@
 
 import  { useEffect, useState } from 'react'
 import data from '../assets/data'
+import { Link } from 'react-router-dom'
 function Aurthors() {
     const [aurthors,setAurthors]=useState(data)
     const [seePost,setSeePosts]=useState(false)
@@ -29,6 +30,8 @@ function Aurthors() {
     
     )) : ""
      }
+
+     <Link></Link>
 
     </div>
   )

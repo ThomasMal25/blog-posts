@@ -3,6 +3,7 @@ import  { useEffect, useState } from 'react'
 import data from '../assets/data'
 function Aurthors() {
     const [aurthors,setAurthors]=useState(data)
+    const [seePost,setSeePosts]=useState(false)
   
     useEffect(() => {
       const filterAuthors = () => {
@@ -23,6 +24,7 @@ function Aurthors() {
         <div>
             
          <p>{items.aurthor}</p>
+        <button onclick= {()=> setSeePosts(true)}>View aurthor's posts</button>
         </div>
 
     ))}
